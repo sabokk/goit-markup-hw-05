@@ -556,13 +556,15 @@
         <div class="subscribe">
           <p class="text-subscribe">Subscribe</p>
           <form class="form-subscribe">
-            <input
-              type="email"
-              class="email-subscribe"
-              name="email_footer"
-              placeholder="E-mail"
-              required
-            />
+            <label class="label-subscribe">
+              <input
+                type="email"
+                class="email-subscribe"
+                name="email_footer"
+                placeholder="E-mail"
+                required
+              />
+            </label>
 
             <button class="btm-subscribe" type="submit">
               Subscribe
@@ -584,40 +586,61 @@
         <p class="text-model">Leave your contacts and we will call you back</p>
         <form class="from-model">
           <div class="input-wrapper">
-            <label class="label-model">Name</label>
-            <input
-              type="text"
-              class="input-model"
-              name="name"
-              autofocus="on"
-              required
-            />
-            <svg class="svg-model" width="18" height="18">
-              <use href="./images/icons.svg#icon-name"></use>
-            </svg>
+            <label for="user-name" class="label-model">Name</label>
+            <div class="input-svg-wrapper">
+              <input
+                type="text"
+                id="user-name"
+                class="input-model"
+                name="name"
+                autofocus
+                required
+              />
+              <svg class="svg-model" width="18" height="18">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
           </div>
           <div class="input-wrapper">
-            <label class="label-model">Phone</label>
-            <input type="tel" class="input-model" name="tel" required />
-            <svg class="svg-model" width="18" height="18">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+            <label for="user-phone" class="label-model">Phone</label>
+            <div class="input-svg-wrapper">
+              <input
+                type="tel"
+                id="user-phone"
+                class="input-model"
+                name="tel"
+                required
+              />
+              <svg class="svg-model" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="input-wrapper">
-            <label class="label-model">Email</label>
-            <input type="email" class="input-model" name="email" required />
-            <svg class="svg-model" width="18" height="18">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
+            <label for="user-email" class="label-model">Email</label>
+            <div class="input-svg-wrapper">
+              <input
+                type="email"
+                id="user-email"
+                class="input-model"
+                name="email"
+                required
+              />
+              <svg class="svg-model" width="18" height="18">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
           </div>
-          <label class="label-model">Comment</label>
-          <textarea
-            class="textarea-model"
-            name="comment"
-            value="comment"
-            rows="8"
-            placeholder="Text input"
-          ></textarea>
+          <div class="textarea-wrapper">
+            <label for="user-comment" class="label-model">Comment</label>
+            <textarea
+              id="user-comment"
+              class="textarea-model"
+              name="comment"
+              rows="8"
+              placeholder="Text input"
+            ></textarea>
+          </div>
           <div class="input-wrapper checkbox-container">
             <input
               type="checkbox"
@@ -628,10 +651,10 @@
             <label for="user-privacy" class="label-model label-checkbox"
               ><span class="custom-checkbox"
                 ><svg width="10" height="8" class="icon-vector">
-                  <use href="./images/icons.svg#icon-vector"></use>
-                </svg> </span
-              >I accept the terms and conditions of the &nbsp;<a
+                  <use href="./images/icons.svg#icon-vector"></use></svg></span
+              >I accept the terms and conditions of the&nbsp;<a
                 href=""
+                class="checkbox-link"
                 target="_blank"
                 >Privacy Policy</a
               ></label
