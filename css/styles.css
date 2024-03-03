@@ -500,7 +500,7 @@ a {
   margin-bottom: 16px;
 }
 .subscribe {
-  margin-left: 80px;
+  margin-left: auto;
 }
 .text-subscribe {
   font-weight: 500;
@@ -534,7 +534,7 @@ a {
   display: flex;
   gap: 24px;
 }
-.btm-subscribe {
+.btn-subscribe {
   min-width: 165px;
   display: flex;
   justify-content: center;
@@ -556,7 +556,7 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btm-subscribe:is(:hover, :focus) {
+.btn-subscribe:is(:hover, :focus) {
   background-color: #404bbf;
 }
 .send-svg {
@@ -610,7 +610,7 @@ a {
 .container-form:where(input, textarea) {
   width: 100%;
 }
-.btm-close {
+.btn-close {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -631,7 +631,7 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btm-close:is(:active, :focus, :hover) {
+.btn-close:is(:active, :focus, :hover) {
   background-color: #404bbf;
   fill: #ffffff;
   border: none;
@@ -695,6 +695,7 @@ a {
   margin-bottom: 16px;
 }
 .textarea-model {
+  display: block;
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
